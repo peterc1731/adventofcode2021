@@ -56,7 +56,7 @@ const cO2 = (x: string[]) => {
   return parseInt(working[0], 2);
 };
 
-const lifeSupport = (x:string[]) => oxygen(x) * cO2(x);
+const lifeSupport = (x: string[]) => oxygen(x) * cO2(x);
 
 // test
 
@@ -75,19 +75,13 @@ const testData = [
   "01010",
 ];
 
-assert.equal(
-  powerConsumption(testData),
-  198
-);
+assert.equal(powerConsumption(testData), 198);
 
 assert.equal(getMostCommonAtPosition(testData, 0), 1);
 
 assert.equal(getLeastCommonAtPosition(testData, 0), 0);
 
-assert.equal(
-  lifeSupport(testData),
-  230
-);
+assert.equal(lifeSupport(testData), 230);
 
 console.log("it works ✨");
 
