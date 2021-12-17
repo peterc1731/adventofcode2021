@@ -54,4 +54,4 @@ const input = await fetch("https://adventofcode.com/2021/day/7/input", {
 const data = (await input.text()).split(",").map((n) => parseInt(n));
 
 console.log("part 1 solution: ", minimizeFuel(data));
-console.log("part 1 solution: ", minimizeFuel(data, getExpensiveFuel));
+console.log("part 2 solution: ", minimizeFuel(data, getExpensiveFuel));

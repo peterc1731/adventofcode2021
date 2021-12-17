@@ -83,4 +83,4 @@ const input = await fetch("https://adventofcode.com/2021/day/6/input", {
 const data = (await input.text()).split(",").map((n) => parseInt(n));
 
 console.log("part 1 solution: ", simulateVeryEfficiently(data, 80));
-console.log("part 1 solution: ", simulateVeryEfficiently(data, 256));
+console.log("part 2 solution: ", simulateVeryEfficiently(data, 256));
