@@ -63,8 +63,9 @@ const showResult = (points: string[], folds: string[]) => {
     map = fold(map, f);
   }
   console.log(
-    map.map((r) => r.map((x) => (x === 0 ? "." : "#")).join("")).join("\n")
+    map.map((r) => r.map((x) => (x === 0 ? " " : "#")).join("")).join("\n")
   );
+  return '^';
 };
 
 // test
