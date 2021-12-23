@@ -46,15 +46,6 @@ const shortestPathLength = (grid: Grid, start: Node, goal: Node) => {
   openSet.push({ node: start, weight: h(start) });
 
   const cameFrom: { [key: string]: Node } = {};
-  const reconstructPath = (current: Node) => {
-    let working = current;
-    const path = [working];
-    while (Object.keys(cameFrom).includes(working.toString())) {
-      working = cameFrom[working.toString()];
-      path.unshift(working);
-    }
-    return path;
-  };
 
   const gScore = initialScore(grid);
   gScore[start.toString()] = 0;
