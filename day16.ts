@@ -1,6 +1,5 @@
 import assert from "assert";
 import fetch from "node-fetch";
-import { PriorityQueue } from "./util.js";
 
 // implementation
 
